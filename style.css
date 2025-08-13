@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+html, body { margin:0; height:100%; background:#0a0b10; color:#ddd; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+body, canvas, button { user-select:none; -webkit-user-select:none; -webkit-touch-callout:none; touch-action:none; }
+
+/* Game canvas */
+#game {
+  display:block;
+  margin:0 auto;
+  image-rendering: pixelated;
+  background:#000; /* JS draws the scene each frame */
+}
+
+/* On-screen controls */
+.controls {
+  position:fixed; left:0; right:0; bottom:0;
+  padding:10px;
+  display:flex; justify-content:space-between; gap:12px;
+  pointer-events:auto;
+}
+.controls button {
+  font-size:18px; padding:16px 22px;
+  border-radius:10px; border:1px solid #444;
+  background:#1a1a1a; color:#eee; opacity:.9;
+}
+.dpad, .ab { display:flex; gap:10px; }
+
+@media (min-width: 900px) {
+  .controls { max-width: 900px; margin: 0 auto; }
+}

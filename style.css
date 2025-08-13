@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+html, body { margin:0; height:100%; background:#0b0b0b; color:#ddd; font-family: system-ui, sans-serif; }
+#game { display:block; margin:0 auto; image-rendering: pixelated; background:#000; }
+
+.hud { position:fixed; left:8px; top:8px; display:flex; gap:8px; align-items:center; }
+.hud img { height:16px; }
+
+.controls { position:fixed; left:0; right:0; bottom:0; padding:8px; display:flex; justify-content:space-between; gap:12px; }
+.controls button { font-size:18px; padding:16px 22px; border-radius:10px; border:1px solid #444; background:#1a1a1a; color:#eee; opacity:.9; }
+.dpad { display:flex; gap:10px; }
+.ab { display:flex; gap:10px; }
+@media (min-width: 900px) { .controls { max-width: 900px; margin: 0 auto; } }
